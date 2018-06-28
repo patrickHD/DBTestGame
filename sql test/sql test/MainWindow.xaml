@@ -1,0 +1,34 @@
+﻿<Window x:Class="sql_test.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:sql_test"
+        mc:Ignorable="d"
+        Title="DBTest Game" Height="383" Width="725.5">
+    <Grid x:Name="grid">
+        <TextBlock x:Name="outp" HorizontalAlignment="Left" Margin="10,143,0,0" TextWrapping="Wrap" Text="Output" VerticalAlignment="Top" Height="199" Width="313" Padding="10" Background="#FFF7F7F7" TextAlignment="Left"/>
+        <TextBox x:Name="username" HorizontalAlignment="Left" Height="23" Margin="10,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="password" HorizontalAlignment="Left" Height="23" Margin="10,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="loginbtn" Content="Log In" HorizontalAlignment="Left" Margin="10,118,0,0" VerticalAlignment="Top" Width="120" Click="loginbtn_click"/>
+        <Label x:Name="unlbl" Content="Username" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="pwlbl" Content="Password" HorizontalAlignment="Left" Margin="10,64,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label" Content="New User" HorizontalAlignment="Left" Margin="260,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1" Content="Username" HorizontalAlignment="Left" Margin="260,33,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="newun" HorizontalAlignment="Left" Height="23" Margin="135,36,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label1_Copy" Content="Password" HorizontalAlignment="Left" Margin="260,60,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="newpw" HorizontalAlignment="Left" Height="23" Margin="135,62,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label1_Copy1" Content="Tag" HorizontalAlignment="Left" Margin="260,86,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="newdata" HorizontalAlignment="Left" Height="23" Margin="135,90,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="newuserbtn" Content="Creat User" HorizontalAlignment="Left" Margin="135,118,0,0" VerticalAlignment="Top" Width="120" Click="NewUser_Click"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="332" Margin="328,10,0,0" VerticalAlignment="Top" Width="381">
+            <Button x:Name="gamebutton" Content="New Game" Margin="30,306,30,2" Click="gamebutton_Click"/>
+
+        </Border>
+        <Label x:Name="label2" Content="How to: Click the most boxes within the time limit" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="328,18,0,0" VerticalAlignment="Top" Width="380"/>
+        <Label x:Name="timelabel" Content="Time: 000" HorizontalAlignment="Left" Margin="328,49,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="scorelabel" Content="000: Score" HorizontalAlignment="Right" HorizontalContentAlignment="Right" Margin="0,49,10,0" VerticalAlignment="Top"/>
+        <Button x:Name="logoutbtn" IsEnabled="False" Content="Log Out" HorizontalAlignment="Left" Margin="260,118,0,0" VerticalAlignment="Top" Width="63" Click="logoutbtn_Click"/>
+
+    </Grid>
+</Window>
