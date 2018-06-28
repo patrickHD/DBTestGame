@@ -41,15 +41,6 @@ namespace sql_test
         public MainWindow()
         {
             InitializeComponent();
-            var dbCon = DBConnection.Instance();
-            if (dbCon.IsConnect())
-            {
-                outp.Text = "Database connected.\nReady for login.";
-            }
-            else
-            {
-                outp.Text = "Database may be unavailible.\nLogin or register to try again.";
-            }
             countdowntimer.Tick += Timer_Tick;
             gametimer.Tick += Gametimer_Tick;
         }
@@ -418,6 +409,26 @@ namespace sql_test
                 logoutbtn.IsEnabled = false;
                 outp.Text = "Logged out";
             }
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void Window_ContentRendered(object sender, EventArgs e)
+        {
+            outp.Text = "Connecting...";
+            var dbCon = DBConnection.Instance();
+            if (dbCon.IsConnect())
+            {
+                outp.Text = "Database connected.\nHave fun!\nRegister or login to save your score.";
+            }
+            else
+            {
+                outp.Text = "Database may be unavailible.\nLogin or register to try again.";
+            }
+
         }
     }
 }
