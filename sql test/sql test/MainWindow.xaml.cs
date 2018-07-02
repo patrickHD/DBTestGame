@@ -110,7 +110,7 @@ namespace sql_test
                     {
                         if(login == true && currentuser != null && score > topscore)
                         {
-                            outp.Text += "\nNew High score!";
+                            outp.Text += "New High score!\n";
                             try
                             {
                                 reader = SqlExecute($"UPDATE `usertable` SET `score` = '{score}' WHERE `usertable`.`username` = '{currentuser}'", dbCon);
@@ -142,7 +142,7 @@ namespace sql_test
                                 outp.Text += reader.GetString("score") + "\n";
                                 if (i < 4)
                                 {
-                                    outp.Text += "Says: " + reader.GetString("data") + "\n";
+                                    outp.Text += "  Says: " + reader.GetString("data") + "\n";
                                 }
                                 i++;
                             }

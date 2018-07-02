@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Loaded="Window_Loaded"
         ContentRendered="Window_ContentRendered"
+        Icon="/icon.ico"
         Title="DBTest Game" Height="383" Width="725.5">
     <Grid x:Name="grid">
         <TextBlock x:Name="outp" HorizontalAlignment="Left" Margin="10,143,0,0" TextWrapping="Wrap" Text="Connecting..." VerticalAlignment="Top" Height="199" Width="313" Padding="10" Background="#FFF7F7F7" TextAlignment="Left"/>
