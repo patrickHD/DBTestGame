@@ -8,7 +8,7 @@
         Loaded="Window_Loaded"
         ContentRendered="Window_ContentRendered"
         Icon="/icon.ico"
-        Title="DBTest Game" Height="383" Width="725.5">
+        Title="DBTest Game" Height="383" Width="725.5" ResizeMode="NoResize">
     <Grid x:Name="grid">
         <TextBlock x:Name="outp" HorizontalAlignment="Left" Margin="10,143,0,0" TextWrapping="Wrap" Text="Connecting..." VerticalAlignment="Top" Height="199" Width="313" Padding="10" Background="#FFF7F7F7" TextAlignment="Left"/>
         <TextBox x:Name="username" HorizontalAlignment="Left" Height="23" Margin="10,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
@@ -21,9 +21,9 @@
         <TextBox x:Name="newun" HorizontalAlignment="Left" Height="23" Margin="135,36,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <Label x:Name="label1_Copy" Content="Password" HorizontalAlignment="Left" Margin="260,60,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="newpw" HorizontalAlignment="Left" Height="23" Margin="135,62,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Label x:Name="label1_Copy1" Content="Tag" HorizontalAlignment="Left" Margin="260,86,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1_Copy1" Content="Win Quote" HorizontalAlignment="Left" Margin="260,86,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="newdata" HorizontalAlignment="Left" Height="23" Margin="135,90,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="newuserbtn" Content="Creat User" HorizontalAlignment="Left" Margin="135,118,0,0" VerticalAlignment="Top" Width="120" Click="NewUser_Click"/>
+        <Button x:Name="newuserbtn" Content="Create User" HorizontalAlignment="Left" Margin="135,118,0,0" VerticalAlignment="Top" Width="120" Click="NewUser_Click"/>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="332" Margin="328,10,0,0" VerticalAlignment="Top" Width="381">
             <Button x:Name="gamebutton" Content="New Game" Margin="30,306,30,2" Click="gamebutton_Click"/>
 

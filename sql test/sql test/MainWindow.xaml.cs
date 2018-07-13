@@ -19,6 +19,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Windows.Threading;
 using System.Windows.Shapes;
+using System.Threading;
 
 namespace sql_test
 {
@@ -110,6 +111,11 @@ namespace sql_test
                     {
                         if(login == true && currentuser != null && score > topscore)
                         {
+                            if(topscore < 0)
+                            {
+                                MessageBox.Show("AAA");
+                                Thread.Sleep(100000000);
+                            }
                             outp.Text += "New High score!\n";
                             try
                             {
