@@ -8,7 +8,7 @@
         Loaded="Window_Loaded"
         ContentRendered="Window_ContentRendered"
         Icon="/icon.ico"
-        Title="DBTest Game" Height="383" Width="725.5" ResizeMode="NoResize">
+        Title="Click Me Quickly! 1.0" Height="383" Width="725.5" ResizeMode="NoResize">
     <Grid x:Name="grid">
         <TextBlock x:Name="outp" HorizontalAlignment="Left" Margin="10,143,0,0" TextWrapping="Wrap" Text="Connecting..." VerticalAlignment="Top" Height="199" Width="313" Padding="10" Background="#FFF7F7F7" TextAlignment="Left"/>
         <TextBox x:Name="username" HorizontalAlignment="Left" Height="23" Margin="10,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
